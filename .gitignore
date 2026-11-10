@@ -1,0 +1,39 @@
+# =============================================================================
+# SEVAK Workspace Git Ignore
+# =============================================================================
+
+# Environment variables & secrets (CRITICAL: NEVER COMMIT)
+.env
+.env.*
+*.env
+backend/.env
+backend/.env.*
+!.env.example
+!backend/.env.example
+
+# Node dependencies & builds
+node_modules/
+build/
+dist/
+coverage/
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# System & editor files
+.DS_Store
+Thumbs.db
+*.log
+.aistudio/
+.kilo/
+
+# Local media generation (keep out of GitHub repo)
+brag-output/
+test_chrome.html
+
